@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Широкий вибір дверей і замків за приємними цінами. Першокласне обслуговування, швидка доставка, якісний монтаж. Перевір!">
+  <meta name="keywords" content="Двери, Замки, Константиновка, Краматорск, Дружковка, Донецкая область, магазин дверей, Двері, Замки, Костянтинівка, Краматорськ, Дружківка, Донецька область, магазин дверей">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Інтер'єр - твій магазин дверей</title>
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.svg') }}">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+</head>
+<body>
+
+<!--TITLE SECTION-->
+<section id="title">
+
+    <!--    Nav bar-->
+    <nav class="navbar navbar-expand-lg">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#pro_interyer">Про Інтер'єр</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#oferta">Оферта</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#aktualne">Галерея</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#perevagy">Переваги</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Контакт</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-lg-8">
+                <h1 class="big-heading">Відкрийте двері<br/>у світ <span class="half_background">якості </span></h1>
+            </div>
+
+            <div class="col-lg-4">
+                <img class="title-image" src="static/images/opening-a-door.png" alt="iphone-mockup">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!--SECTION ABOUT-->
+
+<section id="pro_interyer">
+
+    <div class="container-fluid">
+        <h1 class="heading-about">Ми - перші!</h1>
+
+        <div class="row">
+
+            <div class="col-lg-4">
+
+                <img id="img-house" src="static/images/condo.png" alt="iphone-mockup">
+            </div>
+
+            <div class="col-lg-4">
+
+
+                <p>В 2005 році ми заснували Інтер'єр - перший і єдиний на той час магазин дверей у Костянтинівці.<br>
+                    Ми відчинили свої двері, щоби разом із вами будувати неперевершені інтер'єри родинних і ділових
+                    помешкань.</p><br><br>
+                <p>Сьогодні, 16 років по тому, ми залишаємося поруч - із солідною обізнаністю у своїй галузі, відкритістю до нового і нескінченою любов'ю до вас - наших клієнтів.
+                Маючи поважний багаторічний досвід, ми впевнено крокуємо в ногу із часом і пропонуємо вам найновіші, найоптимальніші й найгарніші розв'язання для комфорту і краси ваших домівок та офісів.
+                </p>
+            </div>
+
+
+            <div class="col-lg-4">
+                <img id="img-design" src="static/images/everyday-design.png" alt="iphone-mockup">
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+
+<section id="oferta">
+    <div class="container-fluid">
+        <h1 class="oferta-heading">Інтер'єр пропонує:</h1>
+        <p>
+            <img src="static/images/check.png" class="img-check"> Вхідні та міжкомнатні двері
+        </p>
+<br>
+         <p>
+            <img src="static/images/check.png" class="img-check"> Двірну фурнітуру (замки, двірні ручки, завіси)
+        </p>
+<br>
+         <p>
+            <img src="static/images/check.png" class="img-check"> Погонаж до дверей (лиштви, добори, коробки, капітелі)
+        </p>
+<br>
+         <p>
+            <img src="static/images/check.png" class="img-check"> Добірні планки
+        </p>
+<br>
+         <p>
+            <img src="static/images/check.png" class="img-check"> Швидку доставку
+        </p>
+<br>
+         <p>
+            <img src="static/images/check.png" class="img-check"> Якісний монтаж
+        </p>
+    </div>
+</section>
+
+<section id="aktualne">
+    <h1 class="gallery-heading">Найактуальніші моделі</h1>
+
+     <div id="aktualne-carousel" class="carousel slide" data-ride="false">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active container-fluid">
+          <img class="door-image" src="static/images/polo.jpg" alt="door" style="max-height:70vh;">
+            <em><h2 class="door-text">Вхідні двері: Polo</h2></em>
+        </div>
+
+<div class="carousel-item container-fluid">
+          <img class="door-image" src="static/images/basis-mokko.jpg" alt="door" style="max-height:70vh;">
+            <em><h2 class="door-text">Міжкімнатні двері: Базіс, мокко</h2></em>
+        </div>
+
+         <div class="carousel-item container-fluid">
+          <img class="door-image" src="static/images/dg42.jpg" alt="door" style="max-height:70vh;">
+            <em><h2 class="door-text">Вхідні двері: DG-42, графіт</h2></em>
+        </div>
+
+              <div class="carousel-item container-fluid">
+          <img class="door-image" src="static/images/dg-42-w.jpg" alt="door" style="max-height:70vh;">
+            <em><h2 class="door-text">Вхідні двері: DG-42, біла матова</h2></em>
+        </div>
+
+             <div class="carousel-item container-fluid">
+          <img class="door-image" src="static/images/nika-grey.jpg" alt="door" style="max-height:70vh;">
+            <em><h2 class="door-text">Міжкімнатні двері: Ніка Silver</h2></em>
+        </div>
+
+           <div class="carousel-item container-fluid">
+          <img class="door-image" src="static/images/shale.jpg" alt="door" style="max-height:70vh;">
+            <em><h2 class="door-text">Вхідні двері: Дуб шале кориця, Молдінг 2</h2></em>
+        </div>
+
+
+
+      <a class="carousel-control-prev" href="#aktualne-carousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#aktualne-carousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+</div>
+
+</section>
+
+
+<section id="perevagy">
+
+    <h1>Замов двері у нас і тішся</h1>
+
+    <div class="row">
+<div class="col-lg-6">
+    <p>
+            <img class="perevagy-img" src="static/images/clock-illustration.png" >Швидкою реалізацією замовлення
+        </p>
+<br>
+<br>
+    <p>
+            <img class="perevagy-img" src="static/images/wallet-illustration.png"> Приємними цінами
+        </p>
+<br>
+</div>
+
+        <div class="col-lg-6">
+    <p>
+            <img class="perevagy-img" src="static/images/toy-car.png"> Доставкою в зручний для тебе час
+        </p>
+<br>
+            <br>
+            <p>
+            <img class="perevagy-img" src="static/images/survey-heart-2.png"> Досконалим обслуговуванням
+        </p>
+
+</div>
+
+
+    </div>
+
+
+</section>
+
+
+<section id="contact">
+<div class="container-fluid">
+    <h1 class="contact-heading">Ласкаво просимо</h1>
+
+<div class="row">
+    <div class="col-lg-6">
+        <h4>Чекаємо на вас за адресою:</h4>
+        <br>
+        <p>проспект Ломоносова, 115, Костянтинівка, Донецька область, 85110</p>
+
+        <p>з понеділка  по п'ятницю від 09:00 до 16:00<br>
+            в суботу  від 09:00 до 13:00</p>
+<br>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1111.2587672873528!2d37.68787690841218!3d48.513419326572226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dfc428a31d1e5d%3A0xc1bd6b5c684764e1!2sProspekt%20Lomonosova%2C%20115%2C%20Kostiantynivka%2C%20Donets&#39;ka%20oblast%2C%20Ukraina%2C%2085100!5e0!3m2!1spl!2spl!4v1628952366845!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <div class="col-lg-6">
+<h4>Телефон, viber, whatsupp за номером:</h4>
+
+        <p>+380 50 158 08 02</p>
+        <br>
+        <br>
+<h4>E-mail:</h4>
+
+        <p><a id="email-link" href="mailto:interyer05@ukr.net">interyer05@ukr.net</a></p>
+
+    </div>
+
+</div>
+    </div>
+
+</section>
+
+<footer class="white-section" id="footer">
+    <div class="container-fluid">
+      <p id="copyright">© Copyright 2021 PP Babich Viktoriia Oleksandrivna</p>
+    </div>
+  </footer>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
